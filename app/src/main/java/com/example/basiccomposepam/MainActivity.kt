@@ -6,6 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.R
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -54,3 +55,6 @@ fun BasicLayout(modifier: Modifier = Modifier) {
         Text(text = "Login", style = TextStyle(fontSize = 50.sp,
             fontWeight = FontWeight.Bold ))
     }
+    Image(painter = painterResource(id = R.drawable.umy), contentDescription = null,
+        modifier = Modifier.padding(top = 20.dp).size(200.dp)
+    )
