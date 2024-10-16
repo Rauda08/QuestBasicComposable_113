@@ -58,3 +58,9 @@ fun BasicLayout(modifier: Modifier = Modifier) {
             style = TextStyle(fontSize = 20.sp) )
         Image(painter = painterResource(id = R.drawable.umy), contentDescription = null,
         modifier = Modifier.padding(top = 20.dp).size(200.dp)
+        )
+
+        Text(text = "nama",
+            modifier = Modifier.padding(top=30.dp))
+        Text(text = "Raudatul Jannah", color = Color.Blue,
+            style = TextStyle(fontSize = 25.sp, fontWeight = FontWeight.Bold) )
