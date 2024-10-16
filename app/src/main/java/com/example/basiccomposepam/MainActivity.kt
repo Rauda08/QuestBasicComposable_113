@@ -64,3 +64,4 @@ fun BasicLayout(modifier: Modifier = Modifier) {
             modifier = Modifier.padding(top=30.dp))
         Text(text = "Raudatul Jannah", color = Color.Blue,
             style = TextStyle(fontSize = 25.sp, fontWeight = FontWeight.Bold) )
+        Text(text = "20220140113", color = Color.Magenta,
