@@ -35,10 +35,6 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-class BasicLayout(modifier: Modifier) {
-
-}
-
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
@@ -49,8 +45,9 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
-    BasicComposePAMTheme {
-        Greeting("Android")
-    }
-}
+fun BasicLayout(modifier: Modifier = Modifier) {
+    Column(
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center,
+        modifier = Modifier.fillMaxSize()
+    ){
