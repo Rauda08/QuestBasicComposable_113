@@ -6,7 +6,6 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.layout.R
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -71,4 +70,11 @@ fun BasicLayout(modifier: Modifier = Modifier) {
             modifier = Modifier.padding(top = 40.dp).size(300.dp))
     }
 
+}
+@Preview(showBackground = true)
+@Composable
+fun GreetingPreview() {
+    BasicComposePAMTheme {
+        BasicLayout()
+    }
 }
