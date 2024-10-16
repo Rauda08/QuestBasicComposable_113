@@ -20,7 +20,11 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.example.basiccomposepam.ui.theme.BasicComposePAMTheme
 
-class MainActivity : ComponentActivity()
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+}
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
