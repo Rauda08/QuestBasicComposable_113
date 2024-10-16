@@ -67,3 +67,4 @@ fun BasicLayout(modifier: Modifier = Modifier) {
         Text(text = "20220140113", color = Color.Magenta,
             style = TextStyle(fontSize = 40.sp, fontWeight = FontWeight.Bold),
             modifier = Modifier.padding(top=20.dp))
+        Image(painter = painterResource(id = R.drawable.fotokecil), contentDescription = null,
